@@ -1,4 +1,4 @@
-package edu.mum.cs544;
+package edu.mum.cs544.config;
 
 import java.util.Properties;
 

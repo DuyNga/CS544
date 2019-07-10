@@ -1,4 +1,4 @@
-package edu.mum.cs544;
+package edu.mum.cs544.config;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;

@@ -1,9 +1,8 @@
-package edu.mum.cs544;
+package edu.mum.cs544.service;
 
 import java.util.List;
 
-import javax.annotation.Resource;
-
+import edu.mum.cs544.domain.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

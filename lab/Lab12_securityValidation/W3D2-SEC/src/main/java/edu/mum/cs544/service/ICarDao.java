@@ -1,4 +1,6 @@
-package edu.mum.cs544;
+package edu.mum.cs544.service;
+
+import edu.mum.cs544.domain.Car;
 
 import java.util.List;
 

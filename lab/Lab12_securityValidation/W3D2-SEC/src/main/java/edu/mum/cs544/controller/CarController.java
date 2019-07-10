@@ -1,7 +1,7 @@
-package edu.mum.cs544;
+package edu.mum.cs544.controller;
 
-import javax.annotation.Resource;
-
+import edu.mum.cs544.service.CarService;
+import edu.mum.cs544.domain.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

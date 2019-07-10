@@ -1,4 +1,4 @@
-package edu.mum.cs544;
+package edu.mum.cs544.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

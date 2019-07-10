@@ -1,10 +1,11 @@
-package edu.mum.cs544;
+package edu.mum.cs544.service;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import edu.mum.cs544.domain.Car;
 import org.springframework.stereotype.Repository;
 
 @Repository
