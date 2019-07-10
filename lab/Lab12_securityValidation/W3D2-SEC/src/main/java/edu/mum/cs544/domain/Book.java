@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Positive;
 
 @Entity
 @Data
@@ -23,8 +25,10 @@ public class Book {
         this.author = author;
         this.price = price;
     }
-
+    @org.hibernate.validator.constraints.ISBN
     private String ISBN;
+    @NotEmpty
     private String author;
+    @Positive
     private double price;
 }
