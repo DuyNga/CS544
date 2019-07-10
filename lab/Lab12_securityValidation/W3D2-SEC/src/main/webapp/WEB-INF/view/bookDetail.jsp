@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
@@ -36,11 +37,16 @@
     </table>
     <input type="submit"/>
 </form:form>
-<c:if test="${msg == 'Update'}">
-    <form action="delete?bookId=${book.id}" method="post">
-        <button type="submit">Delete</button>
-    </form>
-</c:if>
+
+<%--<c:if test="${sessionScope.user.role == 'ADMIN'}">--%>
+    <c:if test="${msg == 'Update'}">
+        <form action="delete?bookId=${book.id}" method="post">
+            <button type="submit">Delete</button>
+            <sec:csrfInput />
+        </form>
+    </c:if>
+<%--</c:if>--%>
+
 </body>
 
 </html>
